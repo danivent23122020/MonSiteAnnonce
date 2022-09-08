@@ -20,6 +20,31 @@ nav ul {
     list-style-type: none;
     @extend %flex-center-center;
 }
-nav ul li a {
+nav ul li {
+    margin: 0 20px;
+}
+nav a {
     text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: 300;
+}
+nav a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: relative;
+    top: 4px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+    transition: transform 0.2s ease-in-out;
+}
+.link-essai{
+    font-size: 20px;
+    font-weight: bold;
 }
