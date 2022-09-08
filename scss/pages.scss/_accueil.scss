@@ -1,0 +1,15 @@
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Roboto', sans-serif;
+body {
+    background: $main-purple;
+}
+h1 {
+    @extend %titre-global;
+    color: $color-h1;
+}
+.box {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    @include absolute-el(50%,0,0,50%, -50%, -50%)
+}
