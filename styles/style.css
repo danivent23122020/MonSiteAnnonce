@@ -14,7 +14,7 @@ nav {
   width: 100%;
   height: 70%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -38,7 +38,7 @@ nav a {
   font-weight: 300;
 }
 
-nav a::after {
+nav li a::after {
   content: "";
   display: block;
   width: 100%;
@@ -50,7 +50,7 @@ nav a::after {
   transition: transform 0.2s ease-in-out;
 }
 
-nav a:hover::after {
+nav li a:hover::after {
   transform: scaleX(1);
   transition: transform 0.2s ease-in-out;
 }
@@ -58,6 +58,70 @@ nav a:hover::after {
 .link-essai {
   font-size: 20px;
   font-weight: bold;
+  margin-right: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(45deg, darkviolet, #0f4d57);
+}
+
+.responsive-nav-btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+@media screen and (max-width: 950px) {
+  .logo-nav {
+    padding-left: 0;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: absolute;
+    top: -5px;
+    border-bottom: 1px solid #000;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #000;
+    display: none;
+  }
+
+  nav ul li {
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .link-essai {
+    margin-right: 0;
+    display: none;
+  }
+
+  .responsive-nav-btn {
+    display: block;
+  }
+
+  .active-nav {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
