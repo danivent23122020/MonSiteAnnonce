@@ -1,1 +1,21 @@
 sass --watch scss/global.scss styles/style.css
+
+%flex-center-center
+%title-global
+
+polygon
+clip-path: polygon(1% 1%, 49% 17%, 100% 2%, 100% 83%, 50% 98%, 0 84%);
+
+petite pointes
+  clip-path: polygon(
+        0 0,
+        45% 0,
+        50% 10%,
+        55% 0,
+        100% 0,
+        100% 90%,
+        55% 90%,
+        50% 100%,
+        45% 90%,
+        0 90%
+    );
