@@ -22,7 +22,7 @@
     padding: 10px 5px;
   }
 }
-.container-boxs, .accueil, nav ul {
+.container-faq, .container-boxs, .accueil, nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,7 +187,7 @@ nav li a:hover::after {
     height: 500px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 760px) {
   .accueil {
     padding: 100px 0 50px;
     height: 500px;
@@ -227,7 +227,7 @@ nav li a:hover::after {
 .performances-contain {
   width: 100%;
   height: 400px;
-  padding: 120px 20px 170px;
+  padding: 120px 0px 170px;
   margin-bottom: 100px;
   clip-path: polygon(0 0, 45% 0, 50% 10%, 55% 0, 100% 0, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0 90%);
   background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%), linear-gradient(135deg, #f663c8 0%, #f663c8 12.5%, #b877aa 12.5%, #b877aa 25%, #957595 25%, #957595 37.5%, #a279ac 37.5%, #a279ac 50%, #8f74b0 50%, #8f74b0 62.5%, #8b7e99 62.5%, #8b7e99 75%, #7d788d 75%, #7d788d 87.5%, #9d8989 87.5%, #9d8989 100%);
@@ -236,7 +236,7 @@ nav li a:hover::after {
 .performances2-contain {
   width: 100%;
   height: 400px;
-  padding: 120px 20px 170px;
+  padding: 120px 0px 170px;
   margin-bottom: 100px;
   clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 83%);
   background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%), linear-gradient(135deg, #f663c8 0%, #f663c8 12.5%, #b877aa 12.5%, #b877aa 25%, #957595 25%, #957595 37.5%, #a279ac 37.5%, #a279ac 50%, #8f74b0 50%, #8f74b0 62.5%, #8b7e99 62.5%, #8b7e99 75%, #7d788d 75%, #7d788d 87.5%, #9d8989 87.5%, #9d8989 100%);
@@ -291,9 +291,13 @@ nav li a:hover::after {
   }
 }
 @media screen and (max-width: 760px) {
+  .performances-contain {
+    clip-path: polygon(0 0, 45% 0, 50% 5%, 55% 0, 100% 0, 100% 90%, 55% 90%, 50% 95%, 45% 90%, 0 90%);
+  }
+
   .performances-contain,
 .performances2-contain {
-    padding: 65px 20px 150px;
+    padding: 65px 0px 150px;
   }
 
   .container-boxs {
@@ -320,6 +324,114 @@ nav li a:hover::after {
 
   .info-clients {
     font-size: 20px;
+  }
+}
+.container-faq {
+  width: 70%;
+  max-width: 900px;
+  min-width: 300px;
+  height: auto;
+  margin: 10px auto 150px;
+  flex-direction: column;
+}
+
+.questions {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+}
+
+.display-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 10px;
+  position: relative;
+  z-index: 100;
+}
+
+.display-panel img {
+  margin-right: 10px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.title-questions {
+  margin-left: 10px;
+  padding: 15px 5px;
+  font-size: 25px;
+}
+
+.toggle-panel {
+  padding: 0 15px;
+  height: 0;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle-panel h4 {
+  font-size: 21px;
+  padding: 0 0 15px;
+}
+
+.toggle-panel p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 760px) {
+  .container-faq {
+    width: 90%;
+  }
+
+  .title-questions {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+.container-cta {
+  width: 100%;
+  padding: 150px 0 100px;
+  clip-path: polygon(0 17%, 100% 0, 100% 83%, 0 100%);
+  background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.72%, rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%), linear-gradient(135deg, #f663c8 0%, #f663c8 12.5%, #b877aa 12.5%, #b877aa 25%, #957595 25%, #957595 37.5%, #a279ac 37.5%, #a279ac 50%, #8f74b0 50%, #8f74b0 62.5%, #8b7e99 62.5%, #8b7e99 75%, #7d788d 75%, #7d788d 87.5%, #9d8989 87.5%, #9d8989 100%);
+}
+
+.txt-cta {
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+.btn-cta {
+  width: 250px;
+  display: block;
+  color: #f1f1f1;
+  background-color: darkviolet;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 9999px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-cta:hover {
+  color: #111;
+  background-color: #ab56cf;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 760px) {
+  .txt-cta {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .btn-cta {
+    width: 200px;
   }
 }
 
