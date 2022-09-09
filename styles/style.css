@@ -20,7 +20,6 @@ nav {
 
 .logo-nav {
   font-size: 30px;
-  padding-left: 20px;
 }
 
 nav ul {
@@ -79,7 +78,6 @@ nav li a:hover::after {
 
 @media screen and (max-width: 950px) {
   .logo-nav {
-    padding-left: 0;
     width: 100%;
     background: #fff;
     text-align: center;
