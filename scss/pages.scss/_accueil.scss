@@ -111,7 +111,7 @@ nav li a:hover::after {
 }
 //// main global \\\\
 .main-global {
-    padding-bottom: 400px;
+    // padding-bottom: 0px;
 }
 //// accueil \\\\
 .accueil {
@@ -478,9 +478,9 @@ nav li a:hover::after {
 .btn-cta {
     width: 250px;
     display: block;
+    font-size: 24px;
     color: #f1f1f1;
     background-color: $main-purple;
-    font-size: 24px;
     text-align: center;
     text-decoration: none;
     margin: 30px auto;
@@ -489,10 +489,17 @@ nav li a:hover::after {
     transition: all 0.2s ease-in-out;
 }
 .btn-cta:hover {
+    font-size: 25px;
     color: #111;
-    background-color: #ab56cf;
-    transform: scale(1.05);
+    background-color: #b68dc8;
+    // background-color: #ab56cf;
+    transform: scaleX(1.05);
     transition: all 0.2s ease-in-out;
+}
+// separation
+.social {
+    width: 50%;
+    margin: 4% auto;
 }
 // responsive
 @media screen and (max-width: 760px) {
@@ -502,5 +509,83 @@ nav li a:hover::after {
     }
     .btn-cta {
         width: 200px;
+    }
+}
+//// footer \\\\
+footer {
+    @extend %flex-center-center;
+    flex-direction: column;
+    color: #333;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+.bloc {
+    width: 300px;
+    margin: 0 10px 15px;
+}
+.bloc h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.list-media {
+    @extend %flex-center-center;
+}
+.list-media img {
+    width: 40px;
+    margin: 10px 10px;
+}
+
+// ----contact-----
+.title-contact {
+    font-size: 30px;
+    color: #000;
+    margin: 20px auto;
+}
+.sub-title-contact {
+    font-weight: lighter;
+    font-size: 25px;
+    margin: 10px auto 30px;
+    color: #000;
+}
+.three-contacts {
+    width: 800px;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 200px;
+    text-align: center;
+}
+.box span {
+    font-size: 20px;
+}
+.box img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px;
+}
+// responsive
+@media screen and (max-width: 800px) {
+    .sub-title-contact {
+        text-align: center;
+        font-size: 20px;
+        margin: 10px auto 10px;
+    }
+    .three-contacts {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .box {
+        margin: 20px auto;
+        width: auto;
+        text-align: center;
+    }
+    .box img {
+        width: 45px;
     }
 }
