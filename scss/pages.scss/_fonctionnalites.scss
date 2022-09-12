@@ -4,7 +4,7 @@
 //// accueil \\\\
 .accueil-fonctionnalites {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     // justify-content: space-around;
@@ -48,7 +48,7 @@
 // responsive
 @media screen and(max-width: 950px) {
     .accueil-fonctionnalites {
-        height: 80vh;
+        height: 40vh;
     }
     .title-fonctionnalite {
         font-size: 40px;
@@ -101,7 +101,7 @@
     width: 90%;
     max-width: 1700px;
     min-width: 300px;
-    margin: 120px auto 200px;
+    margin: 110px auto 200px;
     @extend %flex-center-center;
     flex-wrap: wrap;
 }
@@ -234,7 +234,8 @@ form button {
     width: 500px;
     height: 500px;
     border: 1px solid #000;
-    background: url(../../ressources/img-galerie.jpg);
+    background: url(../ressources/img-galerie.jpg);
+    // background: url(../../ressources/img-galerie.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -256,11 +257,11 @@ form button {
         font-size: 35px;
     }
     .txt-box p:nth-child(3) {
-    font-size: 25px;
-}
-.txt-box p:nth-child(4) {
-    font-size: 20px;
-}
+        font-size: 25px;
+    }
+    .txt-box p:nth-child(4) {
+        font-size: 20px;
+    }
     .txt-box {
         margin: 5px;
     }
