@@ -808,6 +808,11 @@ form button {
     margin: 5px;
   }
 }
+.array {
+  margin: 0;
+  padding: 0;
+}
+
 .title-tarifs {
   padding: 120px 0 20px;
 }
@@ -891,6 +896,74 @@ td {
 
 .panneau-active {
   display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .title-tarifs {
+    font-size: 50px;
+  }
+
+  .container-tarifs {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .title-tarifs {
+    margin-top: 0;
+  }
+
+  .choix-tarifs {
+    height: 70px;
+  }
+
+  .choix {
+    font-size: 25px;
+    width: 150px;
+    height: 100%;
+  }
+
+  th {
+    font-size: 30px;
+  }
+
+  td {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 650px) {
+  .title-tarifs {
+    font-size: 35px;
+  }
+
+  .choix-tarifs {
+    width: 70%;
+    height: 50px;
+  }
+
+  .choix {
+    font-size: 22px;
+    width: 150px;
+    height: 100%;
+  }
+
+  .tableau {
+    border-collapse: collapse;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    color: #000;
+    font-size: 30px;
+  }
+
+  th {
+    font-size: 30px;
+  }
+
+  td {
+    font-size: 22px;
+    font-weight: 400;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
