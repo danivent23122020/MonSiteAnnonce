@@ -4,15 +4,11 @@
 //// accueil \\\\
 .accueil-fonctionnalites {
     width: 100%;
-    height: 50vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    // padding-bottom: 50%;
-}
-.title-fonctionnalite {
-    margin: 150px 0 0px;
 }
 .sub-title-fonctionnalite {
     text-align: center;
@@ -101,6 +97,7 @@
     width: 90%;
     max-width: 1700px;
     min-width: 300px;
+    height: 90vh;
     margin: 110px auto 200px;
     @extend %flex-center-center;
     flex-wrap: wrap;
@@ -270,4 +267,49 @@ form button {
     }
 }
 @media screen and(max-width: 450px) {
+}
+
+/*=== setting scroll to top ===*/
+/* btn scrollup */
+.btn-scrollup {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+}
+.icone {
+    width: 60px;
+}
+.btn-scrollup.active {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+/* responsive scrollup */
+@media screen and (max-width: 550px) {
+    .btn-scrollup {
+        width: 50px;
+        height: 50px;
+    }
+    .icone {
+        width: 45px;
+    }
+    .btn-scrollup.active {
+        visibility: visible;
+        opacity: 1;
+    }
 }
