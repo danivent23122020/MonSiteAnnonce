@@ -908,24 +908,26 @@ form button {
   }
 }
 .array {
+  width: 100%;
+  height: 95vh;
   margin: 0;
   padding: 0;
 }
 
 .title-tarifs {
-  padding: 120px 0 20px;
+  padding: 20px 0 20px;
 }
 
 .container-tarifs {
   width: 60%;
   height: auto;
-  margin: 100px auto 0px;
+  margin: 25px auto 0px;
   max-width: 1100px;
   min-width: 300px;
 }
 
 .choix-tarifs {
-  height: 100px;
+  height: 60px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -966,15 +968,15 @@ form button {
 .tableau {
   border-collapse: collapse;
   width: 65%;
-  height: 700px;
+  height: 550px;
   margin: 0 auto;
   color: #000;
-  font-size: 30px;
+  font-size: 24px;
   background-color: #d1fdfd;
 }
 
 th {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 td,
@@ -998,6 +1000,11 @@ td {
 }
 
 @media screen and (max-width: 1200px) {
+  .array {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
   .title-tarifs {
     font-size: 50px;
   }
@@ -1008,7 +1015,8 @@ td {
 }
 @media screen and (max-width: 950px) {
   .title-tarifs {
-    margin-top: 0;
+    margin: 0;
+    padding-top: 100px;
   }
 
   .choix-tarifs {
@@ -1032,7 +1040,7 @@ td {
 }
 @media screen and (max-width: 650px) {
   .title-tarifs {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .choix-tarifs {
@@ -1052,11 +1060,11 @@ td {
     height: 600px;
     margin: 0 auto;
     color: #000;
-    font-size: 30px;
+    font-size: 24px;
   }
 
   th {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   td {
