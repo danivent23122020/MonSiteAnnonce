@@ -29,17 +29,21 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  position: relative;
   min-height: 100vh;
+  position: relative;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
   width: 100%;
-  height: 70%;
+  height: 70px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .logo-nav {
@@ -147,25 +151,23 @@ nav li a:hover::after {
 }
 .accueil {
   width: 100%;
-  height: 900px;
+  height: 94vh;
   flex-direction: column;
-  padding: 50px 0 75px;
 }
 
 .sub-title {
   text-align: center;
   font-size: 32px;
-  padding-bottom: 20px;
   line-height: 1.2;
 }
 
 .accueil img {
-  width: 1000px;
+  width: 850px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .accueil {
-    padding: 0;
+    padding: 30px 0;
     height: 700px;
   }
 
@@ -179,8 +181,8 @@ nav li a:hover::after {
 }
 @media screen and (max-width: 950px) {
   .accueil {
-    padding: 150px 0 0;
-    height: 500px;
+    padding: 100px 0 0;
+    height: 600px;
   }
 }
 @media screen and (max-width: 760px) {
@@ -190,7 +192,7 @@ nav li a:hover::after {
   }
 
   .accueil img {
-    width: 500px;
+    width: 80%;
   }
 
   .sub-title {
@@ -200,11 +202,6 @@ nav li a:hover::after {
 @media screen and (max-width: 550px) {
   .accueil {
     padding: 75px 0 0;
-    height: 400px;
-  }
-
-  .accueil img {
-    width: 350px;
   }
 
   .sub-title {
@@ -225,7 +222,7 @@ nav li a:hover::after {
   height: 400px;
   padding: 120px 0px 170px;
   margin-bottom: 100px;
-  clip-path: polygon(0 0, 45% 0, 50% 10%, 55% 0, 100% 0, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0 90%);
+  clip-path: polygon(0 0, 46% 0, 50% 8%, 54% 0, 100% 0, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0 90%);
   background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%), linear-gradient(135deg, #f663c8 0%, #f663c8 12.5%, #b877aa 12.5%, #b877aa 25%, #957595 25%, #957595 37.5%, #a279ac 37.5%, #a279ac 50%, #8f74b0 50%, #8f74b0 62.5%, #8b7e99 62.5%, #8b7e99 75%, #7d788d 75%, #7d788d 87.5%, #9d8989 87.5%, #9d8989 100%);
 }
 
