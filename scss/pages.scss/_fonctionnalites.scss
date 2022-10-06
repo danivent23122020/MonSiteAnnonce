@@ -7,7 +7,7 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 .sub-title-fonctionnalite {
@@ -40,11 +40,19 @@
     color: $main-purple;
     background: transparent;
 }
+.fonc-separation {
+    width: 300px;
+    height: 2px;
+    margin: 0 auto 50px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+}
 
 // responsive
 @media screen and(max-width: 950px) {
     .accueil-fonctionnalites {
-        height: 40vh;
+        height: auto;
     }
     .title-fonctionnalite {
         font-size: 40px;
@@ -102,6 +110,9 @@
     @extend %flex-center-center;
     flex-wrap: wrap;
 }
+.title-fonc{
+    width: 100%;
+}
 .box-fonctionnalite {
     width: 400px;
     display: flex;
@@ -120,20 +131,16 @@
     font-weight: 300;
     line-height: 1.2;
 }
+// responsive
+@media screen and(max-width: 950px) {
+    .container-fonctionnalite {
+        height: auto;
+    }
+}
 //// Newsletter \\\\
-.newsletter {
-    margin: 0;
-    padding: 0;
-}
-.sub-title-newsletter {
-    font-size: 27px;
-    text-align: center;
-    margin: 0 0 20px;
-    padding: 0 15px;
-}
 form {
-    width: 50%;
-    margin: 50px auto 200px;
+    width: 100%;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     position: relative;
